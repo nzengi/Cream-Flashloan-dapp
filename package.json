@@ -1,0 +1,26 @@
+{
+    "name": "ethos-reserve",
+    "version": "1.0.0",
+    "description": "Ethos Reserve Token - DeFi Manipulation Research",
+    "main": "index.js",
+    "scripts": {
+        "compile": "hardhat compile",
+        "test": "hardhat test",
+        "deploy": "hardhat run scripts/deploy.js",
+        "deploy:mainnet": "hardhat run scripts/mainnet-deploy.js --network mainnet",
+        "deploy:cream": "hardhat run scripts/cream-deploy.js --network mainnet",
+        "attack": "hardhat run scripts/attack.js"
+    },
+    "dependencies": {
+        "@openzeppelin/contracts": "^5.0.0",
+        "@uniswap/v2-core": "^1.0.1",
+        "@uniswap/v2-periphery": "^1.1.0-beta.0",
+        "hardhat": "^2.19.0",
+        "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+        "dotenv": "^16.3.1"
+    },
+    "devDependencies": {
+        "@nomicfoundation/hardhat-ethers": "^3.0.0",
+        "ethers": "^6.8.0"
+    }
+}
